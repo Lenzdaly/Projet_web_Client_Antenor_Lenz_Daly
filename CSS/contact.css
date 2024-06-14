@@ -1,0 +1,279 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+
+  background: url(../IMAGE/102560-OM5CNM-571.jpg) no-repeat center center / cover;
+  height: 800px;
+  text-align: center;
+  text-size-adjust: 400px;
+  font-family: "Nanum Myeongjo", serif; 
+        
+    }
+
+    
+   a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .header
+    {
+      background: rgb(82, 81, 81);
+        overflow: auto;
+        font-weight: 1.7em;
+    }
+    
+    .header nav h1
+    {
+        float: left;
+        padding: 20px;
+        margin-bottom: 0px;
+        color: white;
+    }
+    
+    .header nav ul 
+    {
+        float: right;
+        list-style: none;
+        /*display: flex;
+        line-height: 20px;*/
+    }
+    
+    .header nav ul li
+    {
+        float: left;
+    }
+    
+    .header nav ul li a
+    {
+        padding: 20px;
+        display: block;
+    }
+    
+    .header nav ul li a:hover
+    {
+        padding: 20px;  background: #333;
+    }
+
+.active
+{
+    padding: 20px;
+    background: #333;
+}
+
+  
+.rod1{
+
+  background: color #fef1df;
+    background-size: cover;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+
+}
+
+    
+
+form{
+      background:#fef1df;
+      padding: 30px;
+      border-radius: 10px;
+      /* position: relative; */
+    }
+
+form h2{
+      font-size: 20px;
+    }
+form .sep{
+  width: 100%;
+  height: 1px
+  ;
+  background: #747cdf;
+
+}
+
+form .bodyform{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+}
+form .bodyform .form-group{
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+form .bodyform .col .form-group input {
+  margin-top:5px ;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #747cdf;
+  border-radius: 5px;
+  
+}
+
+form .bodyform .col .form-group i{
+  position: absolute;
+  left: 0;
+  top:25px ;
+  padding: 9px 8px;
+  color: #747cdf;
+}
+
+form .bodyform .col1{
+  margin-left: 40px;
+}
+
+form .bodyform .col1 .form-group{
+  height: 100%;
+}
+
+form .bodyform .col1 .form-group textarea{
+  margin-top:5px ;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border: 2px solid #747cdf;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 72%;
+}
+form .footform button{
+  margin-top: 10px;
+  background-color: #747cdf;
+  color:white;
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.5s;
+
+}
+
+.pied-page
+{
+  color: white;
+    background: rgb(82, 81, 81);
+    text-align: center;
+    padding: 20px;
+    margin-top: 50%;
+    
+}
+
+
+/* Media Queries for Responsivity */
+@media (max-width: 1200px) {
+  .header nav ul {
+      float: none;
+      text-align: center;
+  }
+
+  .header nav ul li {
+      float: none;
+      display: inline-block;
+  }
+
+  .rod1 {
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  
+
+  .header nav h1 {
+    float: none;
+    text-align: center;
+  }
+.header nav ul {
+    float: none;
+    text-align: center;
+  }
+.header nav ul li {
+    float: none;
+    display: block;
+  }
+.header nav ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .rod1 {
+      width: 90%;
+      padding: 15px;
+  }
+
+  form .bodyform {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  form .bodyform .col1 {
+      margin-left: 0;
+      width: 100%;
+  }
+
+  form .bodyform .col1 .form-group textarea {
+      height: auto;
+  }
+
+  form .footform button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  
+
+  .header nav h1 {
+    float: none;
+    text-align: center;
+  }
+.header nav ul {
+    float: none;
+    text-align: center;
+  }
+.header nav ul li {
+    float: none;
+    display: block;
+  }
+.header nav ul li a {
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  .rod1 {
+      width: 95%;
+      padding: 10px;
+  }
+
+  form {
+      padding: 20px;
+  }
+
+  form h2 {
+      font-size: 18px;
+  }
+
+  form .bodyform .col .form-group input,
+  form .bodyform .col1 .form-group textarea {
+      padding: 10px;
+  }
+
+  form .footform button {
+      width: 100%;
+  }
+}
